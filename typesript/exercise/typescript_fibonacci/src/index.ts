@@ -18,5 +18,5 @@ for (let i = 0; i < size; i++) {
     sum += checkFibonacci(i);
 }
 
-console.log(size + "số fibonacci đâu tiên: " + arr);
+console.log(size + " số fibonacci đâu tiên: " + arr);
 console.log("Tổng " + size + " số fibonacci đầu tiên: " + sum);
