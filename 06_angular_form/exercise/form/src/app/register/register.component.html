@@ -56,12 +56,12 @@
     <label for="phone">Phone </label>
     <input type="text" id="phone" name="phone" formControlName="phone">
     <p style="color: red" class="text-danger" *ngIf="contactForm.controls.phone?.touched && contactForm.controls.phone?.errors?.required">Bắt buộc nhập</p>
-    <p style="color: red" class="text-danger" *ngIf="!contactForm.controls.phone?.errors?.valid && contactForm.controls.phone?.dirty">Số điện thoại phải đúng định dạng</p>
+    <p style="color: red" class="text-danger" *ngIf="contactForm.controls.phone?.errors?.valid && contactForm.controls.phone?.dirty">Số điện thoại phải đúng định dạng</p>
   </div>
 
   <div id="submit">
     <p>
-      <button type="submit" [disabled]="contactForm.valid">Submit</button>
+      <button type="submit" [disabled]="!contactForm.valid">Submit</button>
     </p>
   </div>
 
