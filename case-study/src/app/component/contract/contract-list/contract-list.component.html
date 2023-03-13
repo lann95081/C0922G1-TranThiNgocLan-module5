@@ -42,16 +42,13 @@
       <th class="text-center">Các dịch vụ đi kèm</th>
     </tr>
 
-    <tr *ngFor="let item of ..;index as i">
+    <tr *ngFor="let item of contracts ;index as i">
       <td scope="row" >{{i+1}}</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>{{i + 1}}</td>
+      <td>{{item.startDate}}</td>
+      <td>{{item.endDate}}</td>
+      <td>{{item.deposit}}</td>
+      <td>{{item.total}}</td>
     </tr>
   </table>
 </div>

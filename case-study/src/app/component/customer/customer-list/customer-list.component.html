@@ -32,14 +32,16 @@
       <th class="text-center">Xóa</th>
     </tr>
 
-    <tr *ngFor="let item of ..; index as i">
-      <td scope="row">{{i+1}}</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+    <tr *ngFor="let item of customers; index as i">
+      <td>{{i + 1}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.dayOfBirth}}</td>
+      <td>{{item.idCard}}</td>
+      <td>{{item.phoneNumber}}</td>
+      <td>{{item.email}}</td>
+      <td>{{item.address}}</td>
+      <td>{{item.customerType.name}}</td>
       <td><app-customer-edit></app-customer-edit></td>
       <td></td>
     </tr>
