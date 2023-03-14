@@ -1,4 +1,4 @@
-<div class="mx-5 px-5 pt-3">
+<div class="mx-5 px-5 pt-3" xmlns="http://www.w3.org/1999/html">
   <h2 class="text-center fw-bold text-light">CHỈNH SỬA DỊCH VỤ</h2>
 
   <div class="d-flex justify-content-center">
@@ -57,29 +57,28 @@
         <input type="text" id="description" class="form-control" placeholder="Nhập mô tả tiện nghi khác.."/>
         <span class="input-group-text"><i class="fa-solid fa-book"></i></span>
       </div>
-  </div>
+      <div class="mt-3 form-group">
+        <label for="poolArea" class="h6">Diện tích hồ bơi (m<sup>2</sup>):</label>
+        <div class="input-group">
+          <input type="number" id="poolArea" class="form-control" placeholder="Nhập diện tích hồ bơi.."/>
+          <span class="input-group-text"><i class="fa-solid fa-person-swimming"></i></span>
+        </div>
+      </div>
 
-  <div class="mt-3 form-group">
-    <label for="poolArea" class="h6">Diện tích hồ bơi (m<sup>2</sup>):</label>
-    <div class="input-group">
-      <input type="number" id="poolArea" class="form-control" placeholder="Nhập diện tích hồ bơi.."/>
-      <span class="input-group-text"><i class="fa-solid fa-person-swimming"></i></span>
-    </div>
-  </div>
+      <div class="mt-3 form-group">
+        <label class="h6" for="rentType">Kiểu thuê:</label>
+        <div class="input-group">
+          <select id="rentType" class="form-select">
+            <option></option>
+          </select>
+          <span class="input-group-text"><i class="fa-solid fa-business-time"></i></span>
+        </div>
+      </div>
 
-  <div class="mt-3 form-group">
-    <label class="h6" for="rentType">Kiểu thuê:</label>
-    <div class="input-group">
-      <select id="rentType" class="form-select">
-        <option></option>
-      </select>
-      <span class="input-group-text"><i class="fa-solid fa-business-time"></i></span>
-    </div>
-  </div>
-
-  <div class="mt-3 text-center">
-    <button class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark">
-      -- Lưu <i class="fa-solid fa-floppy-disk"></i> --
-    </button>
-  </div>
+      <div class="mt-3 text-center">
+        <button class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark">
+          -- Lưu <i class="fa-solid fa-floppy-disk"></i> --
+        </button>
+      </div>
+    </form>
 </div>
