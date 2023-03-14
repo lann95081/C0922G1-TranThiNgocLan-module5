@@ -7,9 +7,14 @@
       <th>Tên dịch vụ</th>
       <th>Diện tích (m<sup>2</sup>)</th>
       <th>Chi phí thuê</th>
+      <th>Dịch vụ miễn phí đi kèm</th>
       <th>Số người tối đa</th>
-      <th>Kiểu thuê</th>
+      <th>Số tầng</th>
+      <th>Mô tả tiện nghi khác</th>
+      <th>Diện tích hồ bơi</th>
+      <th>Loại phòng</th>
       <th>Loại dịch vụ</th>
+      <th>Kiểu thuê</th>
       <th class="text-center">Sửa</th>
       <th class="text-center">Xóa</th>
     </tr>
@@ -19,18 +24,17 @@
       <td>{{item.name}}</td>
       <td>{{item.area}}</td>
       <td>{{item.cost}}</td>
-      <td>{{item.maxPeople}}</td>
-      <td>{{item.rentType.name}}</td>
-<!--      <td>{{item.itemType.name}}</td>-->
-      <td>{{item.standardRoom}}</td>
-<!--      <td>{{item.descriptionOtherConvenience}}</td>-->
-<!--      <td>{{item.poolArea}}</td>-->
-<!--      <td>{{item.numberOfFloors}}</td>-->
       <td>{{item.facilityFree}}</td>
+      <td>{{item.maxPeople}}</td>
+      <td>{{item.numberFloors}}</td>
+      <td>{{item.otherConvenience}}</td>
+      <td>{{item.pollArea}}</td>
+      <td>{{item.standardRoom}}</td>
+      <td>{{item.facilityType.name}}</td>
+      <td>{{item.rentType.name}}</td>
       <td>
         <app-facility-edit></app-facility-edit>
       </td>
-      <td></td>
 </div>
 
 <div class="modal fade" id="deleteFacility" tabindex="-1" aria-labelledby="exampleModalLabel1"
