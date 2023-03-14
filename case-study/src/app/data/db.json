@@ -1,0 +1,180 @@
+{
+  "customer": [
+    {
+      "id": 1,
+      "name": [
+        "Nguyễn Thị Hào"
+      ],
+      "gender": [
+        0
+      ],
+      "dayOfBirth": [
+        "1970-11-07"
+      ],
+      "idCard": [
+        "348957435"
+      ],
+      "phoneNumber": [
+        "0986478421"
+      ],
+      "email": [
+        "nguyenhao@gmail.com"
+      ],
+      "address": [
+        "23 Nguyễn Hoàng, Đà Nẵng"
+      ],
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Nguyễn Thị CDD",
+      "gender": 0,
+      "dayOfBirth": "1970-11-07",
+      "idCard": "348957435",
+      "phoneNumber": "0986478421",
+      "email": "nguyenhao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Nguyễn Thị Tr",
+      "gender": 0,
+      "dayOfBirth": "1970-11-07",
+      "idCard": "348957435",
+      "phoneNumber": "0986478421",
+      "email": "nguyenhao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Nguyễn Thị DG",
+      "gender": 0,
+      "dayOfBirth": "1970-11-07",
+      "idCard": "348957435",
+      "phoneNumber": "0986478421",
+      "email": "nguyenhao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": {
+        "id": 3,
+        "name": "Gold"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Nguyễn Thị BV",
+      "gender": 0,
+      "dayOfBirth": "1970-11-07",
+      "idCard": "348957435",
+      "phoneNumber": "0986478421",
+      "email": "nguyenhao@gmail.com",
+      "address": "23 Nguyễn Hoàng, Đà Nẵng",
+      "customerType": {
+        "id": 5,
+        "name": "Member"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Linh Phan",
+      "gender": "",
+      "dayOfBirth": "1996-06-23",
+      "idCard": "698547854",
+      "phoneNumber": "0349373789",
+      "email": "skfreedom45@gmail.com",
+      "address": "Da Nang",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Linh Phan",
+      "gender": "",
+      "dayOfBirth": "1996-03-10",
+      "idCard": "658984879",
+      "phoneNumber": "0349373789",
+      "email": "skfreedom45@gmail.com",
+      "address": "Da Nang",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Linh Phan",
+      "gender": "1",
+      "dayOfBirth": "2000-02-22",
+      "idCard": "986587458",
+      "phoneNumber": "0349373789",
+      "email": "skfreedom45@gmail.com",
+      "address": "Da Nang qq",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Linh Phan",
+      "gender": "1",
+      "dayOfBirth": "2000-04-02",
+      "idCard": "365985475",
+      "phoneNumber": "0349373789",
+      "email": "skfreedom45@gmail.com",
+      "address": "Da Nang",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    },
+    {
+      "id": 11,
+      "name": "Linh Phan",
+      "gender": "0",
+      "dayOfBirth": "2000-05-23",
+      "idCard": "234564354",
+      "phoneNumber": "0349373789",
+      "email": "skfreedom45@gmail.com",
+      "address": "Da Nang",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      }
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}

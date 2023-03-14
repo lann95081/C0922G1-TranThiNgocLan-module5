@@ -26,4 +26,8 @@ export class FacilityService {
   delete(id: number | undefined): Observable<Facility[]> {
     return this.httpClient.delete<Facility[]>('http://localhost:3000/facility' + id);
   }
+
+  edit(id: number, facility: Facility) {
+    return this.httpClient.patch<Facility>('http://localhost:3000/facility/' + id, facility);
+  }
 }
