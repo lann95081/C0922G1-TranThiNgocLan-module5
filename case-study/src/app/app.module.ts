@@ -13,9 +13,8 @@ import {CustomerListComponent} from './component/customer/customer-list/customer
 import {CustomerEditComponent} from './component/customer/customer-edit/customer-edit.component';
 import {CustomerCreateComponent} from './component/customer/customer-create/customer-create.component';
 import {ContractListComponent} from './component/contract/contract-list/contract-list.component';
-import {ContractCreateComponent} from './component/contract/contract-create/contract-create.component';
 import {HttpClientModule} from '@angular/common/http';
-import { FacilityComponent } from './service/facility/facility.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,13 +29,12 @@ import { FacilityComponent } from './service/facility/facility.component';
     CustomerEditComponent,
     CustomerCreateComponent,
     ContractListComponent,
-    ContractCreateComponent,
-    FacilityComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
