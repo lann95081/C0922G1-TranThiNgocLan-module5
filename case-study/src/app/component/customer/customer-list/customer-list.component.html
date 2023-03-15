@@ -26,40 +26,36 @@
       <td>{{item.email}}</td>
       <td>{{item.address}}</td>
       <td>{{item.customerType.name}}</td>
-      <td></td>
-      <td></td>
+      <td class="text-center">
+        <button class="btn btn-outline-primary" routerLink="/customer/edit/{{item.id}}">Sửa</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-outline-danger" (click)=" removeCustomer = item"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">Xoá
+        </button>
+      </td>
     </tr>
   </table>
 </div>
 
-<div class="modal fade" id="deleteCustomer" tabindex="-1" aria-labelledby="exampleModalLabel1"
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content modalCSS">
+    <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel1">Bạn có chắc chắn muốn xóa?</h4>
+        <h5 class="modal-title" id="exampleModalLabel">Xoá khách hàng</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
-      <form>
-        <div class="modal-body">
-          <span class="h6">Khách hàng:</span>
-          <strong id="nameDelete" class="text-danger ps-2"></strong>
-          <input type="hidden" name="idDelete" id="idDelete" readonly/>
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-          <button type="submit" class="btn btn-danger" value="delete">Xóa</button>
-        </div>
-      </form>
+      <div class="modal-body">
+        <span>Bạn có muốn xoá khách hàng: </span><span
+        style="color: red">{{removeCustomer.name}}</span><span>  ?</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" (click)="deleteCustomer()" data-bs-dismiss="modal" class="btn btn-danger">
+          Xóa
+        </button>
+      </div>
     </div>
   </div>
 </div>
-
-<script>
-  function deleteCustomer(id, name) {
-    document.getElementById("idDelete").value = id;
-    document.getElementById("nameDelete").innerText = name;
-  }
-</script>

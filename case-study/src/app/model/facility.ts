@@ -10,8 +10,8 @@ export interface Facility {
   maxPeople?: number;
   numberFloors?: number;
   otherConvenience?: string;
-  pollArea?: number;
-  standardRoom?: number;
+  poolArea?: number;
+  standardRoom?: string;
   facilityType?: FacilityType;
   rentType?: RentType;
 }

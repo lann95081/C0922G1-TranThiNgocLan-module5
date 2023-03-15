@@ -12,28 +12,23 @@ export class CustomerService {
   }
 
   getAll(): Observable<Customer[]> {
-    return this.httpClient.get<Customer[]>('http://localhost:3000/customer');
+    return this.httpClient.get<Customer[]>('http://localhost:3000/customers');
   }
 
   save(customer: Customer): Observable<Customer> {
-    return this.httpClient.post<Customer>('http://localhost:3000/customer', customer);
+    return this.httpClient.post<Customer>('http://localhost:3000/customers', customer);
   }
 
   findById(id: number) {
 
-    return this.httpClient.get('http://localhost:3000/customer' + id);
+    return this.httpClient.get('http://localhost:3000/customers' + id);
   }
 
   edit(customer: Customer) {
-    return this.httpClient.patch('http://localhost:3000/customer' + customer.id, customer);
+    return this.httpClient.patch('http://localhost:3000/customers' + customer.id, customer);
   }
 
-
-  delete(id: number | undefined): Observable<Customer[]> {
-    return this.httpClient.delete<Customer[]>('http://localhost:3000/customer' + id);
-  }
-
-  search(name: string, customerType: string): Observable<Customer[]> {
-    return this.httpClient.get<Customer[]>('http://localhost:3000/customer?name_like&customerType.name_like=' + name + customerType);
+  delete(id: number) {
+    return this.httpClient.delete('http://localhost:3000/customers' + id);
   }
 }
