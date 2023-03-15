@@ -29,7 +29,7 @@ export class FacilityEditComponent implements OnInit {
     maxPeople: new FormControl(this.facility?.standardRoom, [Validators.required]),
     standardRoom: new FormControl(this.facility?.standardRoom, [Validators.required, Validators.min(0), Validators.max(1)]),
     otherConvenience: new FormControl(this.facility?.otherConvenience),
-    poolArea: new FormControl(this.facility?.pollArea),
+    poolArea: new FormControl(this.facility?.poolArea),
     numberFloors: new FormControl(this.facility?.numberFloors),
     rentType: new FormControl(this.facility?.rentType, [Validators.required]),
     facilityType: new FormControl(this.facility?.facilityType, [Validators.required]),
