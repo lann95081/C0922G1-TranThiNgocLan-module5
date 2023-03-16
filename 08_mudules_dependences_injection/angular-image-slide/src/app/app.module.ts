@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ImgSliderComponent } from './img-slider/img-slider.component';
+import {ImgSliderModule} from './img-slider/img-slider.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ImgSliderComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ImgSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
