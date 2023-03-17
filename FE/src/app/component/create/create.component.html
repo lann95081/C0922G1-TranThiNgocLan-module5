@@ -1,0 +1,78 @@
+<div class="text-center">
+  <h3>Thêm mới</h3>
+
+  <button routerLink="/list" class="btn btn-outline-info">Quay lại trang danh sách</button>
+  <div class="container">
+    <form [formGroup]="formCreate" (ngSubmit)="create()">
+
+      <div class="form-group">
+        <label for="busNumber" class="h6">Số xe:</label>
+        <div class="input-group">
+          <input type="text" id="busNumber" class="form-control" formControlName="busNumber"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="garageName" class="h6">Tên nhà xe :</label>
+        <div class="input-group">
+          <input type="text" id="garageName" class="form-control" formControlName="garageName"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone" class="h6">So dien thoai:</label>
+        <div class="input-group">
+          <input type="text" id="phone" class="form-control" formControlName="phone"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="h6">Email:</label>
+        <div class="input-group">
+          <input type="text" id="email" class="form-control"
+                 formControlName="email"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="timeGo" class="h6">Giờ đi:</label>
+        <div class="input-group">
+          <input type="text" id="timeGo" class="form-control"
+                 formControlName="timeGo"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="startGo" class="h6">Điểm đi:</label>
+        <div class="input-group">
+          <input type="text" id="startGo" class="form-control"
+                 formControlName="startGo"/>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="endGo" class="h6">Điểm đến:</label>
+        <div class="input-group">
+          <input type="text" id="endGo" class="form-control"
+                 formControlName="endGo"/>
+        </div>
+      </div>
+
+      <div class="mt-3 form-group">
+        <label class="h6" for="busType">Loại xe :</label>
+        <div class="input-group">
+          <select id="busType" class="form-select">
+            <option value="" disabled>Chọn loại xe..</option>
+            <option *ngFor="let busType of busTypeList">{{busType.busTypeName}}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mt-3 text-center">
+        <button class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark"> -- Lưu --
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>

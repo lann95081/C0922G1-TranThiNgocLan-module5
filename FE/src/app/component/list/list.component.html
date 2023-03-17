@@ -1,0 +1,65 @@
+<div class="text-center">
+  <h3>Danh sách</h3>
+
+  <button class="btn btn-outline-info">Thêm mới</button>
+  <table class="table table-striped">
+    <tr>
+      <th>STT</th>
+      <th>Số xe</th>
+      <th>Tên nhà xe</th>
+      <th>Số điện thoại</th>
+      <th>Email</th>
+      <th>Giờ đi</th>
+      <th>Giờ đến</th>
+      <th>Điểm đi</th>
+      <th>Điểm đến</th>
+      <th>Loại xe</th>
+      <th class="text-center">Sửa</th>
+      <th class="text-center">Xoá</th>
+    </tr>
+    <tr *ngFor="let b of busList, index as i">
+      <td>{{i + 1}}</td>
+      <td>{{b.busNumber}}</td>
+      <td>{{b.garageName}}</td>
+      <td>{{b.phone}}</td>
+      <td>{{b.email}}</td>
+      <td>{{b.timeGo}}</td>
+      <td>{{b.timeOut}}</td>
+      <td>{{b.startGo}}</td>
+      <td>{{b.endGo}}</td>
+      <td>{{b.busType.busTypeName}}</td>
+      <td class="text-center">
+        <button class="btn btn-outline-info" routerLink="/edit/{{b.id}}">Edit</button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                (click)="bus = b">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Xoá thông tin</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <span>Bạn có đồng ý xoá thông tin của xe khách có số xe </span><span
+        style="color: red"></span>{{bus?.id}}<span> hay không?</span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" (click)="delete()" data-bs-dismiss="modal" class="btn btn-danger">
+          Xóa
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
